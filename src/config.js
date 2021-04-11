@@ -1,5 +1,5 @@
 const config ={
-    "test": {
+    "production": {
         'BACKEND': 'https://spotichat-b.herokuapp.com/',
         'SOCKET': 'https://spotichat-b.herokuapp.com:8080',
         'SPOTIFY': 'https://api.spotify.com/v1'
