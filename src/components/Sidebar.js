@@ -60,7 +60,9 @@ export default function Sidebar(props) {
       });
 
       // console.log(res.data);
-      setPeople(res.data.users);
+      if(res.data){
+        setPeople(res.data.users);
+      }
     };
 
     fetchData();
@@ -72,7 +74,7 @@ export default function Sidebar(props) {
     // console.log(peeps);
     return peeps.map((peep) => {
       console.log(peep);
-      let uri = `https://open.spotify.com/follow/1/?uri=spotify:user:${peep}&size=detail&theme=dark`;
+      let uri = `https://open.spotify.com/follow/1/?uri=spotify:user:${peep}&size=detail&theme=light`;
 
       return (
         <li
